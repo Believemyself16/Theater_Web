@@ -8,5 +8,6 @@ BACKEND
    - Folder ResponseObject chuyển đổi dữ liệu sang mã lỗi
 5. Tạo các folder IService và Service
 6. Chức năng đăng ký tài khoản
+------------------------------------------------------------------------------------------------------------
 FRONTEND
 1.

@@ -1,5 +1,7 @@
-﻿namespace Movie_Web.Entities {
-    public class User {
+﻿using TheaterWeb.Entities;
+
+namespace Movie_Web.Entities {
+    public class User : BaseEntity {
         public int Id { get; set; }
         public int Point { get; set; }
         public string Username { get; set; }
@@ -13,7 +15,7 @@
         public UserStatus UserStatus { get; set; }
         public bool IsActive { get; set; }
         public int RoleId { get; set; }
-        public Role Role { get; set; }
+        public Role? Role { get; set; }
         public IEnumerable<Bill> lstBill { get; set; }
         public IEnumerable<ConfirmEmail> lstConfirmEmail { get; set; }
         public IEnumerable<RefreshToken> lstRefreshToken { get; set; }

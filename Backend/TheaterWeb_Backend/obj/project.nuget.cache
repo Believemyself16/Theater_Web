@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wbPDTLL9EBcj1Q7vVpvAfz2tV7OObWG1sCfv5yaUJuFM03ELwni3Q5kQ5hbWoen5ex/B5uL6uzYpp0YgYaEAew==",
+  "dgSpecHash": "J1wkuF9c280zNy/1o+NMWjz+c7UmWVOuVuGG/GGuMoWHbZGkelPLnjdyprsntB5n+zI9jU7D9ypDFmgidHFOqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\OneDrive - m2xk\\Documents\\Csharp\\TheaterWeb\\TheaterWeb.csproj",
+  "projectFilePath": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\TheaterWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

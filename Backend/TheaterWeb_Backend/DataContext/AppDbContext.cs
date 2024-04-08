@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Movie_Web.Entities;
 
-namespace TheaterWeb.Entities {
-    public class AppDbContext : DbContext {
+namespace TheaterWeb.DataContext
+{
+    public class AppDbContext : DbContext
+    {
         public virtual DbSet<Banner> Banner { get; set; }
         public virtual DbSet<Bill> Bill { get; set; }
         public virtual DbSet<BillFood> BillFood { get; set; }
@@ -27,7 +29,8 @@ namespace TheaterWeb.Entities {
         public virtual DbSet<Ticket> Ticket { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<UserStatus> UserStatus { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
             optionsBuilder.UseSqlServer("Server = LAPTOP-K9FVICF6\\SQLEXPRESS; Database = Theater_Web; Trusted_Connection = true; TrustServerCertificate = true");
         }
     }

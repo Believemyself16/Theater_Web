@@ -48,6 +48,8 @@ namespace TheaterWeb.Services.Implements
             user.PhoneNumber = request.PhoneNumber;
             user.Password = BCryptNet.HashPassword(request.Password); //mã hóa mật khẩu truyền vào
             user.RoleId = 3;
+            user.RankCustomerId = 1;
+            user.UserStatusId = 1;
             _context.User.Add(user);
             _context.SaveChanges();
             DataResponseUser result = _converter.EntityToDTO(user);

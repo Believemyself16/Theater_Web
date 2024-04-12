@@ -5,6 +5,6 @@ namespace Movie_Web.Entities {
         public int Id { get; set; }
         public string Code { get; set; }
         public string RoleName { get; set; }
-        public IEnumerable<Role> lstRole { get; set;}
+        public IEnumerable<User> lstUser { get; set;}
     }
 }

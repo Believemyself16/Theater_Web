@@ -15,7 +15,7 @@ namespace Movie_Web.Entities {
         public UserStatus UserStatus { get; set; }
         public bool IsActive { get; set; }
         public int RoleId { get; set; }
-        public Role? Role { get; set; }
+        public Role Role { get; set; }
         public IEnumerable<Bill> lstBill { get; set; }
         public IEnumerable<ConfirmEmail> lstConfirmEmail { get; set; }
         public IEnumerable<RefreshToken> lstRefreshToken { get; set; }

@@ -1,5 +1,8 @@
-﻿namespace Movie_Web.Entities {
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Movie_Web.Entities {
     public class RankCustomer {
+        [Key]
         public int Id { get; set; }
         public int Point { get; set; }
         public string Description { get; set; }

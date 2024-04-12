@@ -12,8 +12,8 @@ using TheaterWeb.DataContext;
 namespace TheaterWeb.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240405074001_addDB")]
-    partial class addDB
+    [Migration("20240412152749_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -497,16 +497,11 @@ namespace TheaterWeb.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("RoleId")
-                        .HasColumnType("int");
-
                     b.Property<string>("RoleName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
 
                     b.ToTable("Role");
                 });
@@ -894,13 +889,6 @@ namespace TheaterWeb.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Movie_Web.Entities.Role", b =>
-                {
-                    b.HasOne("Movie_Web.Entities.Role", null)
-                        .WithMany("lstRole")
-                        .HasForeignKey("RoleId");
-                });
-
             modelBuilder.Entity("Movie_Web.Entities.Room", b =>
                 {
                     b.HasOne("Movie_Web.Entities.Cinema", "Cinema")
@@ -986,7 +974,7 @@ namespace TheaterWeb.Migrations
                         .IsRequired();
 
                     b.HasOne("Movie_Web.Entities.Role", "Role")
-                        .WithMany()
+                        .WithMany("lstUser")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1055,7 +1043,7 @@ namespace TheaterWeb.Migrations
 
             modelBuilder.Entity("Movie_Web.Entities.Role", b =>
                 {
-                    b.Navigation("lstRole");
+                    b.Navigation("lstUser");
                 });
 
             modelBuilder.Entity("Movie_Web.Entities.Room", b =>

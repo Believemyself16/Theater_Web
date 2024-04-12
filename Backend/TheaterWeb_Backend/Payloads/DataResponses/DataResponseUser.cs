@@ -6,5 +6,7 @@
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
         public string RoleName { get; set; }
+        public string RankName { get; set; }
+        public string UserStatusName { get; set; }
     }
 }

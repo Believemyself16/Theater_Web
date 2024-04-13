@@ -12,7 +12,7 @@ namespace TheaterWeb.Controllers {
             _userService = userService;
         }
         [HttpPost("api/auth/register")]
-        public IActionResult Register([FromForm]RequestRegister request) {
+        public IActionResult Register([FromForm]Request_Register request) {
             return Ok(_userService.Register(request));
         }
     }

@@ -1,5 +1,5 @@
 ﻿namespace TheaterWeb.Payloads.DataRequests {
-    public class RequestRegister {
+    public class Request_Register {
         //các dữ liệu đăng ký tài khoản
         public string Username { get; set; }
         public string Email { get; set; }

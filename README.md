@@ -12,6 +12,9 @@ BACKEND
    - Xác nhận thông tin nhập vào
    - Dùng phương thức post để chạy chức năng đăng ký
 7. Chức năng xác thực và phân quyền
+   - Xây dựng bằng jwt
+8. Chức năng đăng nhập
+   -
 ------------------------------------------------------------------------------------------------------------
 FRONTEND
 1.

@@ -9,6 +9,9 @@ BACKEND
 5. Tạo các folder IService và Service
 6. Chức năng đăng ký tài khoản
    - Mã hóa mật khẩu bằng package BCrypt.Net-Next
+   - Xác nhận thông tin nhập vào
+   - Dùng phương thức post để chạy chức năng đăng ký
+7. Chức năng xác thực và phân quyền
 ------------------------------------------------------------------------------------------------------------
 FRONTEND
 1.

@@ -22,3 +22,9 @@ export default {
   }),
 };
 </script>
+
+<style>
+.v-application a {
+  color: black;
+}
+</style>

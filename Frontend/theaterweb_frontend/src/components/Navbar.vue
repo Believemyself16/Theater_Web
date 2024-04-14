@@ -21,7 +21,7 @@
     </div>
     <!-- thanh menu điều hướng -->
     <v-toolbar app height="74">
-      <a href="https://betacinemas.vn/home.htm">
+      <a href="/">
         <v-img src="https://betacinemas.vn/Assets/Common/logo/logo.png"></v-img>
       </a>
       <v-toolbar-items>
@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style scoped>
+.v-application a {
+  color: black !important;
+}
 .inner {
   width: 94%;
   max-width: 96%;

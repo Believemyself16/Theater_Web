@@ -14,7 +14,7 @@ BACKEND
 6. Chức năng xác thực và phân quyền
    - Xây dựng bằng jwt
 7. Chức năng đăng nhập
-   - 
+   - Xác thực mật khẩu, username nhập vào
 ------------------------------------------------------------------------------------------------------------
 FRONTEND
 1.

@@ -175,3 +175,4 @@ C:\Users\Asus\OneDrive - m2xk\Desktop\Theater_Web\Backend\TheaterWeb_Backend\obj
 C:\Users\Asus\OneDrive - m2xk\Desktop\Theater_Web\Backend\TheaterWeb_Backend\obj\Debug\net6.0\TheaterWeb.genruntimeconfig.cache
 C:\Users\Asus\OneDrive - m2xk\Desktop\Theater_Web\Backend\TheaterWeb_Backend\obj\Debug\net6.0\ref\TheaterWeb.dll
 C:\Users\Asus\OneDrive - m2xk\Desktop\Theater_Web\Backend\TheaterWeb_Backend\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\Asus\OneDrive - m2xk\Desktop\Theater_Web\Backend\TheaterWeb_Backend\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

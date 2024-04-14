@@ -18,10 +18,15 @@ namespace TheaterWeb.Services.Implements
         private readonly ResponseObject<DataResponseUser> _responseObject;
         private readonly UserConverter _converter;
         private readonly IConfiguration _configuration;
+        private readonly ResponseObject<DataResponseToken> _responseTokenObject;
+        private readonly HttpContextAccessor _httpContextAccessor;
+
         public UserService(IConfiguration configuration) {
             _converter = new UserConverter();
             _responseObject = new ResponseObject<DataResponseUser>();
             _configuration = configuration;
+            _responseTokenObject = new ResponseObject<DataResponseToken>();
+            _httpContextAccessor = new HttpContextAccessor();
         }
 
         //đăng ký tài khoản
@@ -73,7 +78,7 @@ namespace TheaterWeb.Services.Implements
 
         public DataResponseToken GenerateAccessToken(User user) {
             var jwtTokenHandler = new JwtSecurityTokenHandler();
-            var secretKeyBytes = System.Text.Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings: SecretKey").Value);
+            var secretKeyBytes = System.Text.Encoding.UTF8.GetBytes(_configuration.GetSection("AppSettings:SecretKey").Value);
             
             var role = _context.Role.FirstOrDefault(x => x.Id == user.RoleId); //lấy ra quyền của role này
 
@@ -82,7 +87,7 @@ namespace TheaterWeb.Services.Implements
                 Subject = new System.Security.Claims.ClaimsIdentity(new[] {
                     new Claim("Id", user.Id.ToString()),
                     new Claim("Email", user.Email),
-                    new Claim("RoleName", role?.RoleName ?? "") //nếu không null thì lấy ra được rolename, không thì là ""
+                    new Claim(ClaimTypes.Role, role?.Code ?? "") //nếu không null thì lấy ra được rolename, không thì là ""
                 }),
                 Expires = DateTime.Now.AddHours(4), //mỗi 4 giờ thì token hết hạn
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(secretKeyBytes), SecurityAlgorithms.HmacSha256Signature)
@@ -112,6 +117,35 @@ namespace TheaterWeb.Services.Implements
 
         public DataResponseToken RenewAccessToken(User user) {
             throw new NotImplementedException();
+        }
+
+        public ResponseObject<DataResponseToken> Login(Request_Login request) {
+            var user = _context.User.FirstOrDefault(x => x.Username.Equals(request.UserName));
+
+            //nếu tài khoản hoặc mật khẩu chưa nhập
+            if(string.IsNullOrWhiteSpace(request.UserName) || string.IsNullOrWhiteSpace(request.Password)) {
+                return _responseTokenObject.ResponseError(StatusCodes.Status400BadRequest, "Vui lòng điền đầy đủ thông tin", null);
+            }
+
+            //kiểm tra mật khẩu
+            bool checkPass = BCryptNet.Verify(request.Password, user.Password);
+            if(!checkPass) {
+                return _responseTokenObject.ResponseError(StatusCodes.Status400BadRequest, "Mật khẩu không chính xác", null);
+            }
+            return _responseTokenObject.ResponseSuccess("Đăng nhập thành công", GenerateAccessToken(user)); //nhập đúng mật khẩu thì tạo access token
+        }
+
+        //lấy thông tin người dùng
+        public IQueryable<DataResponseUser> GetAll() {
+            //var currentUser = _httpContextAccessor.HttpContext.User;
+            //if(!currentUser.Identity.IsAuthenticated) {
+            //    throw new UnauthorizedAccessException("Người dùng không được xác thực hoặc không được xác định");
+            //}
+            //if(!currentUser.IsInRole("Admin")) {
+            //    throw new UnauthorizedAccessException("Người dùng không có quyền sử dụng chức năng này");
+            //}
+            var result = _context.User.Select(x => _converter.EntityToDTO(x));
+            return result;
         }
     }
 }

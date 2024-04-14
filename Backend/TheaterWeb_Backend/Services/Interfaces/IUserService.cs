@@ -9,5 +9,7 @@ namespace TheaterWeb.Services.Interfaces {
         ResponseObject<DataResponseUser> Register(Request_Register request);
         DataResponseToken GenerateAccessToken(User user); //tạo token cho user
         DataResponseToken RenewAccessToken(User user); //làm mới lại access token
+        ResponseObject<DataResponseToken> Login(Request_Login request);
+        IQueryable<DataResponseUser> GetAll();
     }
 }

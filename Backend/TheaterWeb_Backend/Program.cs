@@ -27,13 +27,15 @@ builder.Services.AddSwaggerGen(x => {
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(x => {
     x.RequireHttpsMetadata = false; //không cần thông qua https
     x.SaveToken = true; //token sẽ được lưu trong suốt phiên đăng nhập
-    x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters {
+    x.TokenValidationParameters = new TokenValidationParameters {
         ValidateIssuerSigningKey = true,
         ValidateAudience = false,
         ValidateIssuer = false,
-        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration["AppSettings: SecretKey"]))
+        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(builder.Configuration.GetValue<string>("AppSettings:SecretKey")))
+        //chú ý dấu cách giữa appsetting và secret key có thể gây ra lỗi
     };
 });
+builder.Services.AddScoped<IUserService, UserService>(); //đăng ký dịch vụ với mức độ là scope
 
 var app = builder.Build();
 

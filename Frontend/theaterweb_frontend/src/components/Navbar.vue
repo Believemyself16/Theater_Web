@@ -25,7 +25,13 @@
         <v-img src="https://betacinemas.vn/Assets/Common/logo/logo.png"></v-img>
       </a>
       <v-toolbar-items>
-        <v-btn class="font-oswald" v-for="item in menuItems" :key="item.title">
+        <v-btn
+          class="font-oswald"
+          v-for="item in menuItems"
+          :key="item.title"
+          router
+          :to="item.route"
+        >
           {{ item.title }}
         </v-btn>
       </v-toolbar-items>
@@ -41,11 +47,11 @@ export default {
       menuItems: [
         { title: "Lịch chiếu theo rạp", route: "/lich-chieu-theo-rap" },
         { title: "Phim", route: "/phim" },
-        { title: "Rạp", route: "/rap" },
+        { title: "Rạp", route: "/thong-tin-rap" },
         { title: "Giá vé", route: "/gia-ve" },
         { title: "Tin mới và ưu đãi", route: "/tin-moi-va-uu-dai" },
         { title: "Nhượng quyền", route: "/nhuong-quyen" },
-        { title: "Thành viên", route: "/thanh-vien" },
+        { title: "Thành viên", route: "/login" },
       ],
     };
   },
@@ -54,7 +60,7 @@ export default {
 
 <style scoped>
 .v-application a {
-  color: black !important;
+  color: white !important;
 }
 .inner {
   width: 94%;
@@ -63,7 +69,6 @@ export default {
 }
 .link {
   text-decoration: none;
-  color: white;
   font-size: 13px;
 }
 .link:hover {

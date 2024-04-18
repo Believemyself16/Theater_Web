@@ -1,7 +1,9 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col cols="3">
+  <v-container class="bg-color pb-16" fluid>
+    <hr />
+    <v-row class="mt-2">
+      <v-col cols="1"></v-col>
+      <v-col cols="2" xl="3">
         <a href="/">
           <v-img
             class="ma-2"
@@ -18,7 +20,7 @@
           </li>
         </ul>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="4" xl="4">
         <!-- thẻ div d-flex để thu ngắn chiều dài thẻ <p> -->
         <div class="d-flex">
           <p class="title-block font-weight-black font-oswald">CỤM RẠP BETA</p>
@@ -48,7 +50,12 @@
         </div>
         <div class="d-flex custom-list-style-type">
           <v-row>
-            <v-col cols="2" v-for="(item, index) in socialItems" :key="index">
+            <v-col
+              cols="2"
+              xl="2"
+              v-for="(item, index) in socialItems"
+              :key="index"
+            >
               <a :href="item.route">
                 <v-img
                   :width="30"
@@ -61,7 +68,7 @@
             </v-col>
           </v-row>
         </div>
-        <v-img class="ma-2" src="@/assets/dathongbao.png" :width="175"></v-img>
+        <v-img class="mt-3" src="@/assets/dathongbao.png" :width="175"></v-img>
       </v-col>
       <v-col cols="2">
         <div class="d-flex">
@@ -87,6 +94,7 @@
           <p style="font-size: 17px">Email: bachtx@betagroup.vn</p>
         </div>
       </v-col>
+      <v-col cols="1"></v-col>
     </v-row>
   </v-container>
 </template>
@@ -193,6 +201,9 @@ export default {
 </script>
 
 <style scoped>
+.bg-color {
+  background-color: #f8f8f8;
+}
 .v-application a {
   color: black;
 }

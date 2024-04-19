@@ -18,4 +18,8 @@ BACKEND
    - Xác thực mật khẩu, username nhập vào
 ------------------------------------------------------------------------------------------------------------
 FRONTEND
-1.
+1. Xây dựng Navbar, Footer
+2. Xây Home page
+3. Xây Page Nhượng quyền
+4. Xây Page Thành viên (Đăng kí và đăng nhập)
+5. 

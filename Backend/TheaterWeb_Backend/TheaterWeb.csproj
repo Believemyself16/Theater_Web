@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\WeatherForecastController.cs" />
-    <Compile Remove="Handle\Email\fa.cs" />
+    <Compile Remove="Handle\HandleEmailAndPhone\fa.cs" />
     <Compile Remove="WeatherForecast.cs" />
   </ItemGroup>
 

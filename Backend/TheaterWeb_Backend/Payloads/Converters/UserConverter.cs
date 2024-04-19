@@ -17,7 +17,7 @@ namespace TheaterWeb.Payloads.Converters
                 Email = user.Email,
                 Name = user.Name,
                 PhoneNumber = user.PhoneNumber,
-                RoleName = _context.Role.FirstOrDefault(x => x.Id == user.RoleId).RoleName, //lấy ra role trùng với role của user
+                RoleName = _context.Role.FirstOrDefault(x => x.Id == user.RoleId).RoleName, //lấy ra role name trùng với role của user
                 RankName = _context.RankCustomer.FirstOrDefault(x => x.Id == user.RankCustomerId).Name, //lẩy ra rank của customer
                 UserStatusName = _context.UserStatus.FirstOrDefault(x => x.Id == user.UserStatusId).Name
             };

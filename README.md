@@ -11,6 +11,7 @@ BACKEND
    - Mã hóa mật khẩu bằng package BCrypt.Net-Next
    - Xác nhận thông tin nhập vào
    - Dùng phương thức post để chạy chức năng đăng ký
+   - Sau khi đăng kí, gửi mail về mail của user để xác thực
 6. Chức năng xác thực và phân quyền
    - Xây dựng bằng jwt
 7. Chức năng đăng nhập

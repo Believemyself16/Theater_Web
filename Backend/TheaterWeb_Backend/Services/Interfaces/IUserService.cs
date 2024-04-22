@@ -12,6 +12,9 @@ namespace TheaterWeb.Services.Interfaces
         DataResponseToken RenewAccessToken(User user); //làm mới lại access token
         ResponseObject<DataResponseToken> Login(Request_Login request);
         ResponseObject<DataResponseUser> ConfirmCreateAccount(Request_ConfirmCreateAccount request);
+        ResponseObject<DataResponseUser> ChangePasswword(int UserId, Request_ChangePassword request);
+        string ForgotPassword(Request_ForgotPassword request);
+        string ConfirmCreateNewPassword(Request_ConfirmCreateNewPassword request);
         IQueryable<DataResponseUser> GetAllUser();
     }
 }

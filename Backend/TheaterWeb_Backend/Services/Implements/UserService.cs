@@ -231,6 +231,75 @@ namespace TheaterWeb.Services.Implements
         }
         #endregion
 
+        #region Đổi mật khẩu và quên mật khẩu
+        //đổi mật khẩu
+        public ResponseObject<DataResponseUser> ChangePasswword(int UserId, Request_ChangePassword request) {
+            var user = _context.User.FirstOrDefault(x => x.Id == UserId); //lấy user
+            bool checkOldPassword = BCryptNet.Verify(request.OldPassword, user.Password); //check old password nhập vào
+            if(!checkOldPassword) {
+                return _responseObject.ResponseError(StatusCodes.Status400BadRequest, "Mật khẩu cũ không chính xác", null);
+            }
+            if(!request.NewPassword.Equals(request.ConfirmNewPassword)) {
+                return _responseObject.ResponseError(StatusCodes.Status400BadRequest, "Mật khẩu không trùng khớp", null);
+            }
+            //nếu nhập mật khẩu đúng hết
+            user.Password = BCryptNet.HashPassword(request.NewPassword);
+            _context.User.Update(user);
+            _context.SaveChanges();
+            return _responseObject.ResponseSuccess("Đổi mật khẩu thành công", _converter.EntityToDTO(user));
+        }
+
+        //quên mật khẩu
+        public string ForgotPassword(Request_ForgotPassword request) {
+            //tìm user có email trùng
+            var user = _context.User.FirstOrDefault(x => x.Email == request.Email);
+            if(user is null) {
+                return "Email không tồn tại trong hệ thống";
+            }
+            else {
+                //tìm tất cả các lần người dùng có thao tác liên quan tới mật khẩu, rổi xóa hết
+                var confirms = _context.ConfirmEmail.Where(x => x.UserId == user.Id).ToList();
+                _context.ConfirmEmail.RemoveRange(confirms);
+
+                //tạo confirmEmail mới
+                ConfirmEmail confirmEmail = new ConfirmEmail {
+                    UserId = user.Id,
+                    RequiredTime = DateTime.Now,
+                    ExpiredTime = DateTime.Now.AddHours(4),
+                    ConfirmCode = "MyBugs" + "_" + GenerateCodeActive().ToString(),
+                    IsConfirm = false
+                };
+                _context.ConfirmEmail.Add(confirmEmail);
+                _context.SaveChanges();
+
+                //gửi email tới user
+                string message = SendEmail(new EmailTo {
+                    Mail = request.Email,
+                    Subject = "Nhận mã xác nhận để tạo mật khẩu mới: ",
+                    Content = $"Mã kích hoạt của bạn là {confirmEmail.ConfirmCode}, mã này sẽ hết hạn sau 4 tiếng"
+                });
+                return "Gửi mã xác nhận về email thành công, vui lòng kiểm tra email!";
+            }
+        }
+
+        //tạo mật khẩu mới
+        public string ConfirmCreateNewPassword(Request_ConfirmCreateNewPassword request) {
+            //nếu confirmCode được gửi là sai
+            ConfirmEmail confirmEmail = _context.ConfirmEmail.FirstOrDefault(x => x.ConfirmCode == request.ConfirmCode);
+            if(confirmEmail is null) {
+                return "Mã xác nhận không chính xác";
+            }
+            if(confirmEmail.ExpiredTime < DateTime.Now) {
+                return "Mã xác nhận đã hết hạn";
+            }
+            User user = _context.User.FirstOrDefault(x => x.Id == confirmEmail.UserId);
+            user.Password = BCryptNet.HashPassword(request.NewPassword);
+            _context.User.Update(user);
+            _context.SaveChanges();
+            return "Thay đổi mật khẩu thành công";
+        }
+        #endregion
+
         #region Lấy danh sách người dùng
         public IQueryable<DataResponseUser> GetAllUser() {
             //var currentUser = _httpContextAccessor.HttpContext.User;
@@ -244,5 +313,7 @@ namespace TheaterWeb.Services.Implements
             return result;
         }
         #endregion
+
+        
     }
 }

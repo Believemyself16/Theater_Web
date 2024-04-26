@@ -8,6 +8,8 @@ import GiaVe from "../views/GiaVe.vue";
 import TinMoiVaUuDai from "../views/TinMoiVaUuDai.vue";
 import NhuongQuyen from "../views/NhuongQuyen.vue";
 import ThanhVien from "../views/ThanhVien.vue";
+import DangNhap from "@/components/Account/DangNhap.vue";
+import DangKi from "@/components/Account/DangKi.vue";
 
 Vue.use(VueRouter);
 
@@ -48,9 +50,19 @@ const routes = [
     component: NhuongQuyen,
   },
   {
-    path: "/login",
-    name: "login",
+    path: "/thong-tin-tai-khoan",
+    name: "thong-tin-tai-khoan",
     component: ThanhVien,
+  },
+  {
+    path: "/login/sign-in",
+    name: "signIn",
+    component: DangNhap,
+  },
+  {
+    path: "/login/sign-up",
+    name: "signUp",
+    component: DangKi,
   },
 ];
 

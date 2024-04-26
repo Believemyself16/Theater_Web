@@ -19,14 +19,14 @@ using BCryptNet = BCrypt.Net.BCrypt;
 
 namespace TheaterWeb.Services.Implements
 {
-    public class UserService : BaseService, IUserService {
+    public class AuthService : BaseService, IAuthService {
         private readonly ResponseObject<DataResponseUser> _responseObject;
         private readonly UserConverter _converter;
         private readonly IConfiguration _configuration;
         private readonly ResponseObject<DataResponseToken> _responseTokenObject;
         private readonly HttpContextAccessor _httpContextAccessor;
 
-        public UserService(IConfiguration configuration) {
+        public AuthService(IConfiguration configuration) {
             _converter = new UserConverter();
             _responseObject = new ResponseObject<DataResponseUser>();
             _configuration = configuration;
@@ -85,7 +85,7 @@ namespace TheaterWeb.Services.Implements
                     IsConfirm = false,
                     ExpiredTime = DateTime.Now.AddHours(24),
                     RequiredTime = DateTime.Now,
-                    ConfirmCode = "MyBugs" + "_" + GenerateCodeActive().ToString() //code để confirm tạo email
+                    ConfirmCode = GenerateCodeActive().ToString() //code để confirm tạo email
                 };
                 _context.Add(confirmEmail);
                 _context.SaveChangesAsync();
@@ -111,7 +111,7 @@ namespace TheaterWeb.Services.Implements
             ConfirmEmail confirmEmail = _context.ConfirmEmail.Where(x => x.ConfirmCode.Equals(request.ConfirmCode)).FirstOrDefault();
 
             //nếu không có mail nào
-            if (confirmEmail != null) {
+            if (confirmEmail == null) {
                 return _responseObject.ResponseError(StatusCodes.Status400BadRequest, "Xác nhận đăng ký tài khoản thất bại!", null);
             }
             if (confirmEmail.ExpiredTime < DateTime.Now) {
@@ -119,7 +119,7 @@ namespace TheaterWeb.Services.Implements
             }
             User user = _context.User.FirstOrDefault(x => x.Id == confirmEmail.UserId);
             user.UserStatusId = 2; //sửa trạng thái người dùng
-            _context.User.Add(user);
+            _context.User.Update(user);
             _context.ConfirmEmail.Remove(confirmEmail); //xóa mail đã được kích hoạt khỏi csdl
             _context.SaveChanges();
             return _responseObject.ResponseSuccess("Xác nhận đăng ký tài khoản thành công!", _converter.EntityToDTO(user));
@@ -233,8 +233,8 @@ namespace TheaterWeb.Services.Implements
 
         #region Đổi mật khẩu và quên mật khẩu
         //đổi mật khẩu
-        public ResponseObject<DataResponseUser> ChangePasswword(int UserId, Request_ChangePassword request) {
-            var user = _context.User.FirstOrDefault(x => x.Id == UserId); //lấy user
+        public ResponseObject<DataResponseUser> ChangePasswword(Guid UserId, Request_ChangePassword request) {
+            var user = _context.User.FirstOrDefault(x => x.Id.Equals(UserId)); //lấy user
             bool checkOldPassword = BCryptNet.Verify(request.OldPassword, user.Password); //check old password nhập vào
             if(!checkOldPassword) {
                 return _responseObject.ResponseError(StatusCodes.Status400BadRequest, "Mật khẩu cũ không chính xác", null);

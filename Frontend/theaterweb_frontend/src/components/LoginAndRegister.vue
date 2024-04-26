@@ -15,7 +15,6 @@
         </v-img>
       </a>
       <!-- nút đổi ngôn ngữ -->
-      <v-button></v-button>
     </div>
   </v-container>
 </template>

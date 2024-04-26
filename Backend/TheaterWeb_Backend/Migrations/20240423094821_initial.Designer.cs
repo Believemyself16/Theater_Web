@@ -12,7 +12,7 @@ using TheaterWeb.DataContext;
 namespace TheaterWeb.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240412152749_initial")]
+    [Migration("20240423094821_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -208,6 +208,9 @@ namespace TheaterWeb.Migrations
 
                     b.Property<bool>("IsConfirm")
                         .HasColumnType("bit");
+
+                    b.Property<DateTime>("RequiredTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -709,7 +712,7 @@ namespace TheaterWeb.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActive")
+                    b.Property<bool?>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
@@ -724,10 +727,10 @@ namespace TheaterWeb.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Point")
+                    b.Property<int?>("Point")
                         .HasColumnType("int");
 
-                    b.Property<int>("RankCustomerId")
+                    b.Property<int?>("RankCustomerId")
                         .HasColumnType("int");
 
                     b.Property<int>("RoleId")
@@ -969,9 +972,7 @@ namespace TheaterWeb.Migrations
                 {
                     b.HasOne("Movie_Web.Entities.RankCustomer", "RankCustomer")
                         .WithMany("lstUser")
-                        .HasForeignKey("RankCustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("RankCustomerId");
 
                     b.HasOne("Movie_Web.Entities.Role", "Role")
                         .WithMany("lstUser")

@@ -7,7 +7,7 @@
       <v-col class="item" cols="1">
         <a href="/">
           <v-img
-            height="100%"
+            height="55"
             src="https://betacinemas.vn/Assets/Common/logo/logo.png"
           ></v-img>
         </a>
@@ -42,7 +42,7 @@ export default {
         { title: "GIÁ VÉ", route: "/gia-ve" },
         { title: "TIN MỚI VÀ ƯU ĐÃI", route: "/tin-moi-va-uu-dai" },
         { title: "NHƯỢNG QUYỀN", route: "/nhuong-quyen" },
-        { title: "THÀNH VIÊN", route: "/login" },
+        { title: "THÀNH VIÊN", route: "/thong-tin-tai-khoan" },
       ],
     };
   },

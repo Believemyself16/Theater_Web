@@ -18,7 +18,7 @@ namespace TheaterWeb.Payloads.Converters
                 Name = user.Name,
                 PhoneNumber = user.PhoneNumber,
                 RoleName = _context.Role.FirstOrDefault(x => x.Id == user.RoleId).RoleName, //lấy ra role name trùng với role của user
-                RankName = _context.RankCustomer.FirstOrDefault(x => x.Id == user.RankCustomerId).Name, //lẩy ra rank của customer
+                /*RankName = _context.RankCustomer.FirstOrDefault(x => x.Id == user.RankCustomerId).Name,*/ //lẩy ra rank của customer
                 UserStatusName = _context.UserStatus.FirstOrDefault(x => x.Id == user.UserStatusId).Name
             };
         }

@@ -285,15 +285,15 @@ namespace TheaterWeb.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Point = table.Column<int>(type: "int", nullable: false),
+                    Point = table.Column<int>(type: "int", nullable: true),
                     Username = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RankCustomerId = table.Column<int>(type: "int", nullable: false),
+                    RankCustomerId = table.Column<int>(type: "int", nullable: true),
                     UserStatusId = table.Column<int>(type: "int", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false),
+                    IsActive = table.Column<bool>(type: "bit", nullable: true),
                     RoleId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -303,8 +303,7 @@ namespace TheaterWeb.Migrations
                         name: "FK_User_RankCustomer_RankCustomerId",
                         column: x => x.RankCustomerId,
                         principalTable: "RankCustomer",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_User_Role_RoleId",
                         column: x => x.RoleId,
@@ -432,6 +431,7 @@ namespace TheaterWeb.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
+                    RequiredTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ExpiredTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ConfirmCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsConfirm = table.Column<bool>(type: "bit", nullable: false)

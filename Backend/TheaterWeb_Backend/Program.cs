@@ -12,7 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IUserService, UserService>(); //đăng ký dịch vụ IUserInterface trong container dịch vụ của web
+builder.Services.AddScoped<IAuthService, AuthService>(); //đăng ký dịch vụ IUserInterface trong container dịch vụ của web
 
 //mô tả cho phần authorization
 builder.Services.AddSwaggerGen(x => {
@@ -35,7 +35,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         //chú ý dấu cách giữa appsetting và secret key có thể gây ra lỗi
     };
 });
-builder.Services.AddScoped<IUserService, UserService>(); //đăng ký dịch vụ với mức độ là scope
+builder.Services.AddScoped<IAuthService, AuthService>(); //đăng ký dịch vụ với mức độ là scope
 
 var app = builder.Build();
 

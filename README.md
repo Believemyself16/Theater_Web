@@ -16,6 +16,8 @@ BACKEND
    - Xây dựng bằng jwt
 7. Chức năng đăng nhập
    - Xác thực mật khẩu, username nhập vào
+8. Chức năng đổi mật khẩu
+9. Chức năng quên mật khẩu
 ------------------------------------------------------------------------------------------------------------
 FRONTEND
 1. Xây dựng Navbar, Footer

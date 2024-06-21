@@ -1,0 +1,397 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\payloads\\datarequests\\userrequest\\request_confirmcreateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:payloads\\datarequests\\userrequest\\request_confirmcreateaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\payloads\\datarequests\\userrequest\\request_changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:payloads\\datarequests\\userrequest\\request_changepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:datacontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\services\\interfaces\\icinemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:services\\interfaces\\icinemaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\services\\interfaces\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:services\\interfaces\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\services\\interfaces\\ifoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:services\\interfaces\\ifoodservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\services\\interfaces\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:services\\interfaces\\iseatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\services\\interfaces\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:services\\interfaces\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\payloads\\dataresponses\\dataresponsetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:payloads\\dataresponses\\dataresponsetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\payloads\\responses\\responseobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:payloads\\responses\\responseobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\payloads\\dataresponses\\dataresponseuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:payloads\\dataresponses\\dataresponseuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\payloads\\converters\\userconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:payloads\\converters\\userconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423090552_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240423090552_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\entities\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:entities\\userstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423082551_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240423082551_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\entities\\confirmemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:entities\\confirmemail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\payloads\\datarequests\\userrequest\\request_forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:payloads\\datarequests\\userrequest\\request_forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|c:\\users\\asus\\onedrive - m2xk\\desktop\\theater_web\\backend\\theaterweb_backend\\migrations\\20240423094821_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{893E1745-8D93-4970-9F1B-30AFB06D6402}|TheaterWeb.csproj|solutionrelative:migrations\\20240423094821_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Request_ConfirmCreateAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataRequests\\UserRequest\\Request_ConfirmCreateAccount.cs",
+              "RelativeDocumentMoniker": "Payloads\\DataRequests\\UserRequest\\Request_ConfirmCreateAccount.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataRequests\\UserRequest\\Request_ConfirmCreateAccount.cs",
+              "RelativeToolTip": "Payloads\\DataRequests\\UserRequest\\Request_ConfirmCreateAccount.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:33:44.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Request_ChangePassword.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataRequests\\UserRequest\\Request_ChangePassword.cs",
+              "RelativeDocumentMoniker": "Payloads\\DataRequests\\UserRequest\\Request_ChangePassword.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataRequests\\UserRequest\\Request_ChangePassword.cs",
+              "RelativeToolTip": "Payloads\\DataRequests\\UserRequest\\Request_ChangePassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:33:40.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\DataContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\DataContext\\AppDbContext.cs",
+              "RelativeToolTip": "DataContext\\AppDbContext.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA7wCEAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:16:02.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMovieService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IMovieService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IMovieService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IMovieService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IMovieService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T02:17:28.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IFoodService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IFoodService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IFoodService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IFoodService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IFoodService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T02:16:53.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ISeatService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\ISeatService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\ISeatService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\ISeatService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\ISeatService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T02:16:40.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRoomService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IRoomService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IRoomService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IRoomService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IRoomService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T02:16:24.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABIAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T19:40:15.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Implements\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Implements\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Implements\\AuthService.cs",
+              "RelativeToolTip": "Services\\Implements\\AuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T18:25:46.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T18:24:59.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICinemaService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\ICinemaService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\ICinemaService.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Services\\Interfaces\\ICinemaService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\ICinemaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T02:16:09.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ConfirmEmail.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Entities\\ConfirmEmail.cs",
+              "RelativeDocumentMoniker": "Entities\\ConfirmEmail.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Entities\\ConfirmEmail.cs",
+              "RelativeToolTip": "Entities\\ConfirmEmail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:13:24.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Request_ForgotPassword.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataRequests\\UserRequest\\Request_ForgotPassword.cs",
+              "RelativeDocumentMoniker": "Payloads\\DataRequests\\UserRequest\\Request_ForgotPassword.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataRequests\\UserRequest\\Request_ForgotPassword.cs",
+              "RelativeToolTip": "Payloads\\DataRequests\\UserRequest\\Request_ForgotPassword.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T17:33:18.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:05:22.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ResponseObject.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\Responses\\ResponseObject.cs",
+              "RelativeDocumentMoniker": "Payloads\\Responses\\ResponseObject.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\Responses\\ResponseObject.cs",
+              "RelativeToolTip": "Payloads\\Responses\\ResponseObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T17:39:52.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DataResponseToken.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataResponses\\DataResponseToken.cs",
+              "RelativeDocumentMoniker": "Payloads\\DataResponses\\DataResponseToken.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataResponses\\DataResponseToken.cs",
+              "RelativeToolTip": "Payloads\\DataResponses\\DataResponseToken.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:31:51.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20240423094821_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423094821_initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240423094821_initial.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423094821_initial.cs",
+              "RelativeToolTip": "Migrations\\20240423094821_initial.cs",
+              "ViewState": "AQIAABUBAAAAAAAAAAAQwPABAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T03:24:46.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataResponseUser.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataResponses\\DataResponseUser.cs",
+              "RelativeDocumentMoniker": "Payloads\\DataResponses\\DataResponseUser.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\DataResponses\\DataResponseUser.cs",
+              "RelativeToolTip": "Payloads\\DataResponses\\DataResponseUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T17:15:08.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserConverter.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\Converters\\UserConverter.cs",
+              "RelativeDocumentMoniker": "Payloads\\Converters\\UserConverter.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Payloads\\Converters\\UserConverter.cs",
+              "RelativeToolTip": "Payloads\\Converters\\UserConverter.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T17:22:35.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240423090552_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423090552_initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240423090552_initial.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423090552_initial.cs",
+              "RelativeToolTip": "Migrations\\20240423090552_initial.cs",
+              "ViewState": "AQIAAN8BAAAAAAAAAAAgwOwBAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:05:53.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Entities\\UserStatus.cs",
+              "RelativeDocumentMoniker": "Entities\\UserStatus.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Entities\\UserStatus.cs",
+              "RelativeToolTip": "Entities\\UserStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T07:48:57.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240423082551_initial.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423082551_initial.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240423082551_initial.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Migrations\\20240423082551_initial.cs",
+              "RelativeToolTip": "Migrations\\20240423082551_initial.cs",
+              "ViewState": "AQIAAOEBAAAAAAAAAAAQwPABAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:25:51.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive - m2xk\\Desktop\\Theater_Web\\Backend\\TheaterWeb_Backend\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA3wA8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T08:10:25.042Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
